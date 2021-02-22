@@ -1,0 +1,1055 @@
+[main] [2021-01-20 23:39:35,073] INFO  Vaccinatie  - 	Patiënt: René
+[main] [2021-01-20 23:39:35,080] INFO  Vaccinatie  - 	Leeftijd: 54
+[main] [2021-01-20 23:39:35,080] INFO  Vaccinatie  - 	RIZIV: 43203-67834
+[main] [2021-01-20 23:39:35,086] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan René overhandigd
+[main] [2021-01-20 23:39:35,087] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,087] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,094] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		René blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,095] INFO  Vaccinatie  - 	Patiënt: Marie
+[main] [2021-01-20 23:39:35,095] INFO  Vaccinatie  - 	Leeftijd: 66
+[main] [2021-01-20 23:39:35,095] INFO  Vaccinatie  - 	RIZIV: 66435-96352
+[main] [2021-01-20 23:39:35,095] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Marie overhandigd
+[main] [2021-01-20 23:39:35,095] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,095] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,096] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Marie blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,096] INFO  Vaccinatie  - 	Patiënt: Albert
+[main] [2021-01-20 23:39:35,097] INFO  Vaccinatie  - 	Leeftijd: 40
+[main] [2021-01-20 23:39:35,097] INFO  Vaccinatie  - 	RIZIV: 42715-10679
+[main] [2021-01-20 23:39:35,097] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Albert overhandigd
+[main] [2021-01-20 23:39:35,097] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,098] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,098] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Albert mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,098] INFO  Vaccinatie  - 	Patiënt: Kelly
+[main] [2021-01-20 23:39:35,098] INFO  Vaccinatie  - 	Leeftijd: 59
+[main] [2021-01-20 23:39:35,098] INFO  Vaccinatie  - 	RIZIV: 15003-91633
+[main] [2021-01-20 23:39:35,098] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Kelly overhandigd
+[main] [2021-01-20 23:39:35,098] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,099] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,099] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Kelly blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,099] INFO  Vaccinatie  - 	Patiënt: Julie
+[main] [2021-01-20 23:39:35,100] INFO  Vaccinatie  - 	Leeftijd: 71
+[main] [2021-01-20 23:39:35,100] INFO  Vaccinatie  - 	RIZIV: 62964-22094
+[main] [2021-01-20 23:39:35,101] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Julie overhandigd
+[main] [2021-01-20 23:39:35,101] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,102] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,102] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Julie blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,103] INFO  Vaccinatie  - 	Patiënt: Luc
+[main] [2021-01-20 23:39:35,104] INFO  Vaccinatie  - 	Leeftijd: 69
+[main] [2021-01-20 23:39:35,104] INFO  Vaccinatie  - 	RIZIV: 91671-24171
+[main] [2021-01-20 23:39:35,105] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Luc overhandigd
+[main] [2021-01-20 23:39:35,105] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,106] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,106] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Luc blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,106] INFO  Vaccinatie  - 	Patiënt: Frans
+[main] [2021-01-20 23:39:35,106] INFO  Vaccinatie  - 	Leeftijd: 3
+[main] [2021-01-20 23:39:35,106] INFO  Vaccinatie  - 	RIZIV: 10233-27255
+[main] [2021-01-20 23:39:35,107] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Frans overhandigd
+[main] [2021-01-20 23:39:35,107] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,107] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,108] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Frans blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,109] INFO  Vaccinatie  - 	Patiënt: Walter
+[main] [2021-01-20 23:39:35,109] INFO  Vaccinatie  - 	Leeftijd: 74
+[main] [2021-01-20 23:39:35,109] INFO  Vaccinatie  - 	RIZIV: 29699-78147
+[main] [2021-01-20 23:39:35,109] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Walter overhandigd
+[main] [2021-01-20 23:39:35,109] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Walter blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	Patiënt: Paul
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	Leeftijd: 58
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	RIZIV: 81141-87670
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Paul overhandigd
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,111] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Paul mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	Patiënt: Ingrid
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	Leeftijd: 65
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	RIZIV: 96458-94570
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Ingrid overhandigd
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,112] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Ingrid mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Patiënt: Eric
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Leeftijd: 92
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	RIZIV: 20023-48038
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Eric overhandigd
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Eric blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Patiënt: Linda
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Leeftijd: 43
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	RIZIV: 24157-35049
+[main] [2021-01-20 23:39:35,113] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Linda overhandigd
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Linda blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Patiënt: Paul
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Leeftijd: 40
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	RIZIV: 13119-68816
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Paul overhandigd
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,114] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Paul blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	Patiënt: Patrick
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	Leeftijd: 52
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	RIZIV: 54173-20932
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Patrick overhandigd
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,115] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Patrick blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Patiënt: Sonja
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Leeftijd: 10
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	RIZIV: 13742-46323
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Sonja overhandigd
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Sonja mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Patiënt: Robin
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	Leeftijd: 89
+[main] [2021-01-20 23:39:35,116] INFO  Vaccinatie  - 	RIZIV: 90956-26169
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Robin overhandigd
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Robin blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Patiënt: Elisabeth
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Leeftijd: 25
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	RIZIV: 32169-82122
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Elisabeth overhandigd
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,117] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Elisabeth blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	Patiënt: Lea
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	Leeftijd: 61
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	RIZIV: 11072-25951
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Lea overhandigd
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,118] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Lea blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Patiënt: Kevin
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Leeftijd: 16
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	RIZIV: 36919-33851
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Kevin overhandigd
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Kevin blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Patiënt: Elisabeth
+[main] [2021-01-20 23:39:35,119] INFO  Vaccinatie  - 	Leeftijd: 81
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	RIZIV: 62032-72393
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Elisabeth overhandigd
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Elisabeth blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Patiënt: Peter
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Leeftijd: 94
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	RIZIV: 55870-11780
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Peter overhandigd
+[main] [2021-01-20 23:39:35,120] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Peter blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	Patiënt: Karin
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	Leeftijd: 6
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	RIZIV: 63348-47938
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Karin overhandigd
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,121] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,122] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Karin blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,122] INFO  Vaccinatie  - 	Patiënt: Filip
+[main] [2021-01-20 23:39:35,122] INFO  Vaccinatie  - 	Leeftijd: 55
+[main] [2021-01-20 23:39:35,122] INFO  Vaccinatie  - 	RIZIV: 53497-40222
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Filip overhandigd
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Filip blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Patiënt: Diane
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Leeftijd: 35
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	RIZIV: 77688-77121
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Diane overhandigd
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:39:35,123] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Diane blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,054] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-20 23:40:55,082] INFO  Vaccinatie  - 	Patiënt: Denise
+[main] [2021-01-20 23:40:55,086] INFO  Vaccinatie  - 	Leeftijd: 46
+[main] [2021-01-20 23:40:55,087] INFO  Vaccinatie  - 	RIZIV: 27032-45912
+[main] [2021-01-20 23:40:55,093] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Denise overhandigd
+[main] [2021-01-20 23:40:55,094] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,094] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,094] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Denise blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,094] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-20 23:40:55,095] INFO  Vaccinatie  - 	Patiënt: Agnes
+[main] [2021-01-20 23:40:55,095] INFO  Vaccinatie  - 	Leeftijd: 99
+[main] [2021-01-20 23:40:55,095] INFO  Vaccinatie  - 	RIZIV: 50864-33000
+[main] [2021-01-20 23:40:55,096] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Agnes overhandigd
+[main] [2021-01-20 23:40:55,096] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,096] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,096] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Agnes blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,097] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-20 23:40:55,097] INFO  Vaccinatie  - 	Patiënt: Guy
+[main] [2021-01-20 23:40:55,098] INFO  Vaccinatie  - 	Leeftijd: 17
+[main] [2021-01-20 23:40:55,098] INFO  Vaccinatie  - 	RIZIV: 91084-14463
+[main] [2021-01-20 23:40:55,099] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Guy overhandigd
+[main] [2021-01-20 23:40:55,099] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,099] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,099] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Guy blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,100] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-20 23:40:55,100] INFO  Vaccinatie  - 	Patiënt: Ludo
+[main] [2021-01-20 23:40:55,100] INFO  Vaccinatie  - 	Leeftijd: 30
+[main] [2021-01-20 23:40:55,100] INFO  Vaccinatie  - 	RIZIV: 65076-38695
+[main] [2021-01-20 23:40:55,100] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Ludo overhandigd
+[main] [2021-01-20 23:40:55,100] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,101] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,102] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Ludo blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,102] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-20 23:40:55,102] INFO  Vaccinatie  - 	Patiënt: Frans
+[main] [2021-01-20 23:40:55,103] INFO  Vaccinatie  - 	Leeftijd: 7
+[main] [2021-01-20 23:40:55,103] INFO  Vaccinatie  - 	RIZIV: 38130-36276
+[main] [2021-01-20 23:40:55,103] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Frans overhandigd
+[main] [2021-01-20 23:40:55,103] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,103] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,103] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Frans blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,103] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-20 23:40:55,104] INFO  Vaccinatie  - 	Patiënt: Geert
+[main] [2021-01-20 23:40:55,104] INFO  Vaccinatie  - 	Leeftijd: 17
+[main] [2021-01-20 23:40:55,104] INFO  Vaccinatie  - 	RIZIV: 79906-68974
+[main] [2021-01-20 23:40:55,104] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Geert overhandigd
+[main] [2021-01-20 23:40:55,104] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,104] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,105] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Geert blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,105] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-20 23:40:55,105] INFO  Vaccinatie  - 	Patiënt: Willy
+[main] [2021-01-20 23:40:55,105] INFO  Vaccinatie  - 	Leeftijd: 13
+[main] [2021-01-20 23:40:55,105] INFO  Vaccinatie  - 	RIZIV: 67045-53757
+[main] [2021-01-20 23:40:55,106] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Willy overhandigd
+[main] [2021-01-20 23:40:55,106] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,106] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,106] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Willy blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,106] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-20 23:40:55,106] INFO  Vaccinatie  - 	Patiënt: Tim
+[main] [2021-01-20 23:40:55,106] INFO  Vaccinatie  - 	Leeftijd: 8
+[main] [2021-01-20 23:40:55,106] INFO  Vaccinatie  - 	RIZIV: 96453-72081
+[main] [2021-01-20 23:40:55,107] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Tim overhandigd
+[main] [2021-01-20 23:40:55,107] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,107] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,107] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Tim blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,107] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-20 23:40:55,107] INFO  Vaccinatie  - 	Patiënt: Raymond
+[main] [2021-01-20 23:40:55,107] INFO  Vaccinatie  - 	Leeftijd: 88
+[main] [2021-01-20 23:40:55,108] INFO  Vaccinatie  - 	RIZIV: 20275-82987
+[main] [2021-01-20 23:40:55,108] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Raymond overhandigd
+[main] [2021-01-20 23:40:55,108] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,108] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,108] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Raymond blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,108] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-20 23:40:55,108] INFO  Vaccinatie  - 	Patiënt: Sarah
+[main] [2021-01-20 23:40:55,108] INFO  Vaccinatie  - 	Leeftijd: 93
+[main] [2021-01-20 23:40:55,109] INFO  Vaccinatie  - 	RIZIV: 95500-45452
+[main] [2021-01-20 23:40:55,109] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Sarah overhandigd
+[main] [2021-01-20 23:40:55,109] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,109] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,109] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Sarah blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-20 23:40:55,109] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-20 23:40:55,109] INFO  Vaccinatie  - 	Patiënt: Diane
+[main] [2021-01-20 23:40:55,110] INFO  Vaccinatie  - 	Leeftijd: 64
+[main] [2021-01-20 23:40:55,111] INFO  Vaccinatie  - 	RIZIV: 81322-75448
+[main] [2021-01-20 23:40:55,111] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Diane overhandigd
+[main] [2021-01-20 23:40:55,111] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-20 23:40:55,111] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-20 23:40:55,112] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Diane mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,907] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,950] INFO  Vaccinatie  - 	Patiënt: Roger
+[main] [2021-01-21 18:57:27,957] INFO  Vaccinatie  - 	Leeftijd: 83
+[main] [2021-01-21 18:57:27,957] INFO  Vaccinatie  - 	RIZIV: 76861-99535
+[main] [2021-01-21 18:57:27,963] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Roger overhandigd
+[main] [2021-01-21 18:57:27,963] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,963] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,964] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Roger blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,964] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,964] INFO  Vaccinatie  - 	Patiënt: Lisette
+[main] [2021-01-21 18:57:27,964] INFO  Vaccinatie  - 	Leeftijd: 59
+[main] [2021-01-21 18:57:27,964] INFO  Vaccinatie  - 	RIZIV: 74920-16890
+[main] [2021-01-21 18:57:27,965] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Lisette overhandigd
+[main] [2021-01-21 18:57:27,965] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,965] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,965] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Lisette blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,965] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,966] INFO  Vaccinatie  - 	Patiënt: Martine
+[main] [2021-01-21 18:57:27,967] INFO  Vaccinatie  - 	Leeftijd: 53
+[main] [2021-01-21 18:57:27,967] INFO  Vaccinatie  - 	RIZIV: 97505-35614
+[main] [2021-01-21 18:57:27,967] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Martine overhandigd
+[main] [2021-01-21 18:57:27,967] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,968] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,968] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Martine mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,968] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,968] INFO  Vaccinatie  - 	Patiënt: Geert
+[main] [2021-01-21 18:57:27,968] INFO  Vaccinatie  - 	Leeftijd: 85
+[main] [2021-01-21 18:57:27,968] INFO  Vaccinatie  - 	RIZIV: 46265-13907
+[main] [2021-01-21 18:57:27,968] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Geert overhandigd
+[main] [2021-01-21 18:57:27,969] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,969] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,969] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Geert mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,969] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,969] INFO  Vaccinatie  - 	Patiënt: Ingrid
+[main] [2021-01-21 18:57:27,969] INFO  Vaccinatie  - 	Leeftijd: 16
+[main] [2021-01-21 18:57:27,969] INFO  Vaccinatie  - 	RIZIV: 81225-35929
+[main] [2021-01-21 18:57:27,969] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Ingrid overhandigd
+[main] [2021-01-21 18:57:27,970] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,970] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,970] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Ingrid blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,970] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,971] INFO  Vaccinatie  - 	Patiënt: Greta
+[main] [2021-01-21 18:57:27,971] INFO  Vaccinatie  - 	Leeftijd: 47
+[main] [2021-01-21 18:57:27,971] INFO  Vaccinatie  - 	RIZIV: 45620-68625
+[main] [2021-01-21 18:57:27,971] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Greta overhandigd
+[main] [2021-01-21 18:57:27,971] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,971] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,971] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Greta blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,972] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,972] INFO  Vaccinatie  - 	Patiënt: Charlotte
+[main] [2021-01-21 18:57:27,972] INFO  Vaccinatie  - 	Leeftijd: 64
+[main] [2021-01-21 18:57:27,972] INFO  Vaccinatie  - 	RIZIV: 61142-87355
+[main] [2021-01-21 18:57:27,972] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Charlotte overhandigd
+[main] [2021-01-21 18:57:27,972] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,972] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,972] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Charlotte blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,973] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,973] INFO  Vaccinatie  - 	Patiënt: Ann
+[main] [2021-01-21 18:57:27,973] INFO  Vaccinatie  - 	Leeftijd: 98
+[main] [2021-01-21 18:57:27,973] INFO  Vaccinatie  - 	RIZIV: 56073-77228
+[main] [2021-01-21 18:57:27,973] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Ann overhandigd
+[main] [2021-01-21 18:57:27,973] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,973] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,973] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Ann mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,973] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,974] INFO  Vaccinatie  - 	Patiënt: Jozef
+[main] [2021-01-21 18:57:27,974] INFO  Vaccinatie  - 	Leeftijd: 56
+[main] [2021-01-21 18:57:27,974] INFO  Vaccinatie  - 	RIZIV: 41318-71772
+[main] [2021-01-21 18:57:27,974] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Jozef overhandigd
+[main] [2021-01-21 18:57:27,974] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,974] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,974] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Jozef blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,974] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-21 18:57:27,975] INFO  Vaccinatie  - 	Patiënt: Sam
+[main] [2021-01-21 18:57:27,975] INFO  Vaccinatie  - 	Leeftijd: 66
+[main] [2021-01-21 18:57:27,975] INFO  Vaccinatie  - 	RIZIV: 15736-88058
+[main] [2021-01-21 18:57:27,976] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Sam overhandigd
+[main] [2021-01-21 18:57:27,976] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,976] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,977] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Sam blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,977] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-21 18:57:27,977] INFO  Vaccinatie  - 	Patiënt: Denise
+[main] [2021-01-21 18:57:27,978] INFO  Vaccinatie  - 	Leeftijd: 45
+[main] [2021-01-21 18:57:27,979] INFO  Vaccinatie  - 	RIZIV: 89276-79741
+[main] [2021-01-21 18:57:27,979] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Denise overhandigd
+[main] [2021-01-21 18:57:27,979] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,979] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Denise blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,980] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	Patiënt: Nathalie
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	Leeftijd: 48
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	RIZIV: 79044-89896
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Nathalie overhandigd
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,980] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Nathalie blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,981] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Patiënt: Ludo
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Leeftijd: 91
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	RIZIV: 13676-49032
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Ludo overhandigd
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Ludo blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,981] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Patiënt: Roger
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Leeftijd: 20
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	RIZIV: 16436-77645
+[main] [2021-01-21 18:57:27,981] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Roger overhandigd
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Roger blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,982] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Patiënt: Ludo
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Leeftijd: 28
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	RIZIV: 10539-19843
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Ludo overhandigd
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,982] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Ludo blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,982] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Patiënt: Monique
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Leeftijd: 45
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	RIZIV: 43709-37196
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Monique overhandigd
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Monique blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,983] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Patiënt: Jan
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Leeftijd: 43
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	RIZIV: 21027-71995
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Jan overhandigd
+[main] [2021-01-21 18:57:27,983] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,984] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,984] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Jan blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,984] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,985] INFO  Vaccinatie  - 	Patiënt: Marleen
+[main] [2021-01-21 18:57:27,986] INFO  Vaccinatie  - 	Leeftijd: 21
+[main] [2021-01-21 18:57:27,986] INFO  Vaccinatie  - 	RIZIV: 58248-50175
+[main] [2021-01-21 18:57:27,986] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Marleen overhandigd
+[main] [2021-01-21 18:57:27,986] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,987] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,987] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Marleen mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,988] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-21 18:57:27,988] INFO  Vaccinatie  - 	Patiënt: Frans
+[main] [2021-01-21 18:57:27,988] INFO  Vaccinatie  - 	Leeftijd: 78
+[main] [2021-01-21 18:57:27,988] INFO  Vaccinatie  - 	RIZIV: 88332-63323
+[main] [2021-01-21 18:57:27,988] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Frans overhandigd
+[main] [2021-01-21 18:57:27,988] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Frans blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,989] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	Patiënt: Walter
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	Leeftijd: 76
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	RIZIV: 53922-16910
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Walter overhandigd
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,989] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Walter mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,990] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Patiënt: Marc
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Leeftijd: 33
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	RIZIV: 16996-22868
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Marc overhandigd
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Marc blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,990] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Patiënt: Sofie
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Leeftijd: 37
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	RIZIV: 28054-89752
+[main] [2021-01-21 18:57:27,990] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Sofie overhandigd
+[main] [2021-01-21 18:57:27,991] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,991] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,991] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Sofie blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,991] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,991] INFO  Vaccinatie  - 	Patiënt: Anita
+[main] [2021-01-21 18:57:27,991] INFO  Vaccinatie  - 	Leeftijd: 12
+[main] [2021-01-21 18:57:27,991] INFO  Vaccinatie  - 	RIZIV: 37000-90292
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Anita overhandigd
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Anita mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,992] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Patiënt: Leo
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Leeftijd: 62
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	RIZIV: 88820-67143
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Leo overhandigd
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,992] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,993] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Leo mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,993] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-21 18:57:27,993] INFO  Vaccinatie  - 	Patiënt: Walter
+[main] [2021-01-21 18:57:27,993] INFO  Vaccinatie  - 	Leeftijd: 5
+[main] [2021-01-21 18:57:27,993] INFO  Vaccinatie  - 	RIZIV: 99928-13185
+[main] [2021-01-21 18:57:27,993] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Walter overhandigd
+[main] [2021-01-21 18:57:27,993] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,993] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Walter blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,994] DEBUG Vaccinatie  - Random vaccinatietype: INFLUENZA
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Patiënt: Greta
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Leeftijd: 43
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	RIZIV: 50974-86606
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Influenza aan Greta overhandigd
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Greta mag onmiddelijk vertrekken naar huis
+		Dokter voltooid de registratie van de Influenza vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,994] DEBUG Vaccinatie  - Random vaccinatietype: COVID-19
+[main] [2021-01-21 18:57:27,994] INFO  Vaccinatie  - 	Patiënt: Rita
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Leeftijd: 1
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	RIZIV: 35478-51261
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Informeer: Informatiebrocure COVID-19 aan Rita overhandigd
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Rita blijft nog 10 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de COVID-19 vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,995] DEBUG Vaccinatie  - Random vaccinatietype: HEPATITIS-B
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Patiënt: Sven
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Leeftijd: 91
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	RIZIV: 75893-11771
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Informeer: Informatiebrocure Hepatitis-B aan Sven overhandigd
+[main] [2021-01-21 18:57:27,995] INFO  Vaccinatie  - 	Voorbereiden:
+		Ontdooi vaccin
+		Vaccin opwarmen
+		Oplossen in serum
+		Vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Sven blijft nog 15 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de Hepatitis-B vaccinatie
+-------------------------------------------------------------------------
+[main] [2021-01-21 18:57:27,996] DEBUG Vaccinatie  - Random vaccinatietype: DTP
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Patiënt: Maria
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Leeftijd: 25
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	RIZIV: 54791-29185
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Informeer: Informatiebrocure DTP aan Maria overhandigd
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Voorbereiden:
+		Vaccin optrekken in spuit
+		Vermeng vaccin met serum
+		Vermengd vaccin optrekken in spuitje
+		Bovenarm van patient ontsmetten
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Toedienen:
+		Spuitje wordt toegediend
+[main] [2021-01-21 18:57:27,996] INFO  Vaccinatie  - 	Nazorg:
+		Pleister wordt geplakt
+		Maria blijft nog 5 min wachten en mag dan naar huis
+		Dokter voltooid de registratie van de DTP vaccinatie
+-------------------------------------------------------------------------
