@@ -58,6 +58,12 @@ public class Invoice {
                 "invoice", "part number", getPartNumber(), getPartDescription(),
                 "quantity", getQuantity(), "price per item", getPricePerItem());
     }
+    public String InvoiceCleanedUpFormat(){
+        return String.format("%s: %s (%s) %s: %d %s: $%,.2f",
+                 "part number", getPartNumber(), getPartDescription(),
+                "quantity", getQuantity(), "price per item", getPricePerItem());
+
+    }
 
     // return amount of this Invoice
     public double getInvoiceAmount() {
