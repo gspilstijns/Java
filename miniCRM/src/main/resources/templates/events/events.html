@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<title>events</title>
+<link rel="stylesheet"
+	 href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+
+</head>
+<body>
+<div class="ui container">
+	<h2>Actions</h2>
+	<div>
+		<p>
+			<a th:href="@{/events/new}" class="ui button">New event</a>
+		</p>
+	</div>
+
+	<h2>Events</h2>
+	<div class="ui link cards">
+		<div class="card" th:each="event : ${events}">
+			<div class="content">
+				<div class="header" th:text="${event.description}"></div>
+				<div class="meta">
+					<a th:text="${event.description}"></a>
+				</div>
+				<div class="meta">
+					<a th:text="${event.description}"></a>
+				</div>
+				<div class="description" th:text="${event.description} + ' plus some text'" >
+				</div>
+			</div>
+			<div class="extra content">
+
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+</body>
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>

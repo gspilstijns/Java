@@ -1,12 +1,16 @@
 package com.crm.miniCRM.controller;
 
 import com.crm.miniCRM.dto.AddressDto;
+import com.crm.miniCRM.dto.PersonDto;
 import com.crm.miniCRM.model.Address;
+import com.crm.miniCRM.model.Person;
 import com.crm.miniCRM.model.persistence.AddressRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -34,15 +38,36 @@ public class AddressController {
     @GetMapping("/new")
     public String newadress(Model model) {
         model.addAttribute("address", new AddressDto ());
-        return "new-address";
+        return "addresses/new-address";
     }
 
     @PostMapping
     public String addaddress(AddressDto addressDto) {
         addressRepository.save(convertToEntity(addressDto));
 
-        return "redirect:/addresses";
+        return "redirect:/address";
     }
+
+    @GetMapping("/edit/{id}")
+    public String showUpdateForm( @PathVariable("id") long id, Model model ){
+        Address address = addressRepository.findById ( id );
+        model.addAttribute ( "address", convertToDto ( address ) );
+        return "addresses/update-address";
+
+    }
+    @PostMapping("/edit/{id}")
+    public String updateAddress( @PathVariable("id") long id, AddressDto addressDto,
+                              BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            addressDto.setId(id);
+            return "addresses/update-address";
+        }
+
+        addressRepository.save(convertToEntity ( addressDto ));
+        return "redirect:/address";
+    }
+
+
     protected AddressDto convertToDto(Address entity) {
         AddressDto dto = new AddressDto (
                 entity.getId (),

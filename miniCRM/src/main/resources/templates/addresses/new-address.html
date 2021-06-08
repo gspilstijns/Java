@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Add person</title>
+    <title>Add address</title>
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
@@ -14,22 +14,51 @@
 
     <form th:action="@{/address}" th:object="${address}" method="post"
           class="ui form">
-        <div class="field">
-            <label>First Name</label>
-            <input type="text" th:field="*{firstName}" id="firstName"
-                   name="first-name" placeholder="First Name">
+        <div class="fields">
+            <div class="field">
+                <label>Street</label>
+                <input type="text" th:field="*{street}" id="street"
+                       name="street" placeholder="Street">
+            </div>
+            <div class="field">
+                <label>Number</label>
+                <input type="text" name="number"
+                       th:field="*{number}" id="number" placeholder="Number">
+            </div>
+            <div class="field">
+                <label>Box</label>
+                <input type="text" name="box"
+                       th:field="*{box}" id="box" placeholder="box">
+            </div>
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label>Zip</label>
+                <input type="text" th:field="*{zip}" id="zip"
+                       name="zip" placeholder="Zip">
+            </div>
+            <div class="field">
+                <label>City</label>
+                <input type="text" name="city"
+                       th:field="*{city}" id="city" placeholder="City">
+            </div>
+            <div class="field">
+                <label>Country</label>
+                <input type="text" name="country"
+                       th:field="*{country}" id="country" placeholder="Country">
+            </div>
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label>Type</label>
+                <select class="ui fluid search dropdown" name="type" th:field="*{type}">
+                    <option value="">Type</option>
+                    <option value="PRIV">Private</option>
+                    <option value="PROF">Professional</option>
+                </select>
+            </div>
         </div>
 
-        <div class="field">
-            <label>Last Name</label>
-            <input type="text" name="last-name"
-                   th:field="*{lastName}" id="lastName" placeholder="Last Name">
-        </div>
-        <div class="field">
-            <label>Last Name</label>
-            <input type="text" name="last-name"
-                   th:field="*{birthDay}" id="birthDay" placeholder="dd-mm-yyyy">
-        </div>
         <button class="ui button" type="submit">Submit</button>
 
     </form>

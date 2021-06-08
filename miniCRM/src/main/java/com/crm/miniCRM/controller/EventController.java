@@ -27,7 +27,7 @@ public class EventController {
         List < EventDto > eventDtoList = new ArrayList<> (  );
         events.forEach ( e -> eventDtoList.add ( convertToDto(e) ) );
         model.addAttribute ( "events",eventDtoList );
-        return "events";
+        return "events/events";
     }
 
     @GetMapping("/new")

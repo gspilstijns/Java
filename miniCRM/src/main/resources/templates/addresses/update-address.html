@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Update Address</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 </head>
 <body>
+<div class="ui container">
 
+    <h2>New person</h2>
+
+
+    <form th:action="@{/address/edit/{id}(id=${address.id})}" th:object="${address}" method="post"
+          class="ui form">
+        <div class="fields">
+            <div class="field">
+                <label>Street</label>
+                <input type="text" th:field="*{street}" id="street"
+                       name="street" placeholder="Street">
+            </div>
+            <div class="field">
+                <label>Number</label>
+                <input type="text" name="number"
+                       th:field="*{number}" id="number" placeholder="Number">
+            </div>
+            <div class="field">
+                <label>Box</label>
+                <input type="text" name="box"
+                       th:field="*{box}" id="box" placeholder="box">
+            </div>
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label>Zip</label>
+                <input type="text" th:field="*{zip}" id="zip"
+                       name="zip" placeholder="Zip">
+            </div>
+            <div class="field">
+                <label>City</label>
+                <input type="text" name="city"
+                       th:field="*{city}" id="city" placeholder="City">
+            </div>
+            <div class="field">
+                <label>Country</label>
+                <input type="text" name="country"
+                       th:field="*{country}" id="country" placeholder="Country">
+            </div>
+        </div>
+        <div class="fields">
+            <div class="field">
+                <label>Type</label>
+                <select class="ui fluid search dropdown" name="type" th:field="*{type}">
+                    <option value="">Type</option>
+                    <option value="PRIV">Private</option>
+                    <option value="PROF">Professional</option>
+                </select>
+            </div>
+        </div>
+        <button class="ui button" type="submit" value="update-address">Submit</button>
+
+    </form>
+</div>
 </body>
 </html>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
