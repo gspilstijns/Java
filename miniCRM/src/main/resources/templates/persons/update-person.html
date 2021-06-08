@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Update person</title>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+<body>
+<div class="ui container">
+
+    <h2>New person</h2>
+
+
+    <form th:action="@{/persons/edit/{id}(id=${person.id})}" th:object="${person}" method="post"
+          class="ui form">
+        <div class="field">
+            <label>First Name</label>
+            <input type="text" th:field="*{firstName}" id="firstName"
+                   name="first-name" placeholder="First Name">
+        </div>
+
+        <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="last-name"
+                   th:field="*{lastName}" id="lastName" placeholder="Last Name">
+        </div>
+        <div class="field">
+            <label>Last Name</label>
+            <input type="date" name="last-name"
+                   th:field="*{birthDay}" id="birthDay" placeholder="dd-mm-yyyy">
+        </div>
+        <button class="ui button" type="submit" value="update-person">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
