@@ -26,6 +26,7 @@
             <th>City</th>
             <th>Country</th>
             <th>Type</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -38,7 +39,7 @@
             <td th:text="${address.city}"></td>
             <td th:text="${address.country}"></td>
             <td th:text="${address.type}"></td>
-
+            <td> <a class="ui button fluid" th:href="@{'/address/edit/' + ${address.id}}"> Edit</a></td>
         </tr>
         </tbody>
     </table>
