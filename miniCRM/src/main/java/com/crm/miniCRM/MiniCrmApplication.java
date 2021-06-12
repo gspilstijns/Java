@@ -34,17 +34,17 @@ public class MiniCrmApplication {
         return (args) -> {
 
 //Person
-            extractPersons(personRepository);
+           // extractPersons(personRepository);
 //Address
-            extractAddresses(addressRepository);
+            //extractAddresses(addressRepository);
 //Community
-            extractCommunities(communityRepository);
+           // extractCommunities(communityRepository);
 //Event
-            extractEvents(eventRepository);
+          //  extractEvents(eventRepository);
 //Member
-            extractMembers(memberRepository);
+           // extractMembers(memberRepository);
 //PersonAddress
-            extractPersonAddresses(personAddressRepository);
+         //   extractPersonAddresses(personAddressRepository);
         };
     }
 

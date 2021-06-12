@@ -4,6 +4,7 @@ package com.crm.miniCRM.model;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 
 @Entity
@@ -15,6 +16,9 @@ public class Address {
 
     @ManyToMany(mappedBy = "person_address")
     List<Person> person_address;
+
+    @OneToMany(mappedBy = "address")
+    private Set <PersonAddress> personAddresses;
 
     private String street;
     private String number;

@@ -1,10 +1,15 @@
 package com.crm.miniCRM.controller;
 
+import com.crm.miniCRM.dto.CommunityDto;
 import com.crm.miniCRM.dto.EventDto;
 import com.crm.miniCRM.dto.PersonDto;
+import com.crm.miniCRM.mappers.communityMapper;
+import com.crm.miniCRM.model.Community;
 import com.crm.miniCRM.model.Event;
 import com.crm.miniCRM.model.Person;
+import com.crm.miniCRM.model.persistence.CommunityRepository;
 import com.crm.miniCRM.model.persistence.EventRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StringUtils;
@@ -16,14 +21,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 @Controller
 @RequestMapping(value = "/events")
 public class EventController {
     private EventRepository eventRepository;
 
-    public EventController ( EventRepository eventRepository ) {
+    @Autowired
+    private CommunityRepository communityRepository;
+
+    public EventController ( EventRepository eventRepository  ) {
         this.eventRepository = eventRepository;
+
     }
     @GetMapping
     public String getevent( Model model){
@@ -36,12 +46,23 @@ public class EventController {
 
     @GetMapping("/new")
     public String newevent(Model model){
+        Iterable < Community > communityList = communityRepository.findAll ();
+        List <CommunityDto> communityDtos = new ArrayList <> (  );
+        communityList.forEach ( c-> communityDtos.add ( communityMapper.convertToDto ( c ) ) );
+
         model.addAttribute ( "event",new EventDto (  ) );
+        model.addAttribute ( "communityList", communityDtos );
         return "events/new-event";
     }
     @PostMapping
     public String addevent(EventDto eventDto){
-        eventRepository.save ( convertToEntity(eventDto) );
+
+        //todo: update het eventdto zodat de communitydto correct staat met description etc
+        Optional < Community > community = communityRepository.findById ( eventDto.getCommunityDto ( ).getId ( ) );
+        if (community.isPresent ()){
+            eventDto.setCommunityDto ( communityMapper.convertToDto ( community ) );
+        }
+        eventRepository.save ( convertToEntity(eventDto));
         return "redirect:/events";
     }
 
@@ -69,7 +90,8 @@ public class EventController {
         EventDto dto = new EventDto (
                 entity.getId (),
                 entity.getDescription (),
-                entity.getDate ()
+                entity.getDate (),
+                communityMapper.convertToDto ( entity.getCommunity () )
         );
         return dto;
     }
@@ -78,7 +100,8 @@ public class EventController {
 
         Event event = new Event (
                 dto.getDescription (),
-                dto.getDate ()
+                dto.getDate (),
+                communityMapper.convertToEntity ( dto.getCommunityDto () )
         );
         if (!StringUtils.isEmpty(dto.getId())) {
             event.setId (dto.getId());

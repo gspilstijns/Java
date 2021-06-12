@@ -25,16 +25,21 @@ public class PersonAddressController {
     @GetMapping
     public String getpersonaddress( Model model){
         Iterable< PersonAddress > personAddresses = personAddressRepository.findAll ();
+
         List < PersonAddressDto> personAddressDtoList = new ArrayList<> (  );
         personAddresses.forEach ( p->personAddressDtoList.add ( convertToDto(p) ) );
-        model.addAttribute ( "personaddress",personAddressDtoList );
-        return "personaddress";
+
+        List<PersonAddressDto> list = new ArrayList <> (  );
+        personAddressDtoList.stream ().filter ( x -> x.getId ().getPerson_ID () ==1 ).forEach ( p-> list.add(p) );
+
+        model.addAttribute ( "personaddress",list );
+        return "personAddress/personaddress";
     }
 
     @GetMapping("/new")
     public String newpersonaddress(Model model){
         model.addAttribute ( "personaddress",new PersonAddressDto (  ) );
-        return "new-personaddress";
+        return "personAddress/new-personaddress";
     }
 
     @PostMapping

@@ -9,6 +9,8 @@ public class PersonAddressDto {
     private String phone;
     private String mobile;
     private char    type;
+    private AddressDto addressDto;
+
 
     public PersonAddressDto () {
     }
@@ -21,6 +23,22 @@ public class PersonAddressDto {
         this.type = type;
     }
 
+    public PersonAddressDto ( PersonAddressID id , String email , String phone , String mobile , char type , AddressDto addressDto ) {
+        Id = id;
+        this.email = email;
+        this.phone = phone;
+        this.mobile = mobile;
+        this.type = type;
+        this.addressDto = addressDto;
+    }
+
+    public AddressDto getAddressDto () {
+        return addressDto;
+    }
+
+    public void setAddressDto ( AddressDto addressDto ) {
+        this.addressDto = addressDto;
+    }
 
     public PersonAddressID getId () {
         return Id;

@@ -13,6 +13,19 @@ public class Event {
     private String description;
     private LocalDate date;
 
+    @ManyToOne
+    @JoinColumn(name = "community_id", nullable = true)
+    private Community community;
+
+    public Community getCommunity () {
+        return community;
+    }
+
+    public void setCommunity ( Community community ) {
+        this.community = community;
+    }
+
+
     //  private LocalTime time;
 
 
@@ -23,6 +36,12 @@ public class Event {
      //   this.time = time;
     }
 
+    public Event ( String description , LocalDate date , Community community ) {
+        this.id = id;
+        this.description = description;
+        this.date = date;
+        this.community = community;
+    }
 
     public String getDescription() {
         return description;
@@ -47,6 +66,9 @@ public class Event {
 //    public void setTime(LocalTime time) {
 //        this.time = time;
 //    }
+
+
+
 
     @Override
     public String toString() {

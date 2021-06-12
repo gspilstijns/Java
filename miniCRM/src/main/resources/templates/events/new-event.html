@@ -14,6 +14,14 @@
 					<input type="text" th:field="*{description}" id="description"
 						   name="description" placeholder="Description">
 				</div>
+				<div class="field">
+					<label>Community</label>
+					<select th:field="*{communityDto.id}" class = form-control required>
+						<th:block th:each="community:${communityList}">
+							<option th:text="${community.description}" th:value="${community.id}"></option>
+						</th:block>
+					</select>
+				</div>
 				<button class="ui button" type="submit">Submit</button>
 
 			</form>

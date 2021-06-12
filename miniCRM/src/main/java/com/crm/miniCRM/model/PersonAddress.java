@@ -16,6 +16,9 @@ public class PersonAddress implements Serializable {
     private String mobile;
     private char    type;
 
+    @ManyToOne
+    @JoinColumn(name = "address_id", insertable = false, updatable = false)
+    private Address address;
 
 
     public PersonAddress(){}
@@ -25,6 +28,23 @@ public class PersonAddress implements Serializable {
         this.phone = phone;
         this.mobile = mobile;
         this.type = type;
+    }
+
+    public PersonAddress ( PersonAddressID id , String email , String phone , String mobile , char type , Address address ) {
+        Id = id;
+        this.email = email;
+        this.phone = phone;
+        this.mobile = mobile;
+        this.type = type;
+        this.address = address;
+    }
+
+    public Address getAddress () {
+        return address;
+    }
+
+    public void setAddress ( Address address ) {
+        this.address = address;
     }
 
     public PersonAddressID getId() {

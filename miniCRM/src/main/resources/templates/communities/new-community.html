@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>Add event</title>
+<title>Add community</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 </head>
 <body>
 	<div class="ui container">
-		<h2>New event</h2>
-			<form th:action="@{/events}" th:object="${event}" method="post"
+		<h2>New community</h2>
+			<form th:action="@{/communities}" th:object="${community}" method="post"
 				  class="ui form">
 				<div class="field">
 					<label>Description</label>

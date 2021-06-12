@@ -2,6 +2,7 @@ package com.crm.miniCRM.model;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name="community")
@@ -12,6 +13,18 @@ public class Community {
 
     @ManyToMany(mappedBy = "member")
     private List<Person> member;
+
+    @OneToMany(mappedBy = "community")
+    private Set<Event> events;
+
+    public List < Person > getMember () {
+        return member;
+    }
+
+    public void setMember ( List < Person > member ) {
+        this.member = member;
+    }
+
 
     private String description;
 

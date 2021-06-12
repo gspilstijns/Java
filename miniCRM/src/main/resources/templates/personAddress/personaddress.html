@@ -12,27 +12,26 @@
 	<h2>Actions</h2>
 	<div>
 		<p>
-			<a th:href="@{/events/new}" class="ui button">New event</a>
+			<a th:href="@{/personaddress/new}" class="ui button">New PersonAddress</a>
 		</p>
 	</div>
 
 	<h2>Events</h2>
 	<div class="ui link cards">
-		<div class="card" th:each="event : ${events}">
+		<div class="card" th:each="personaddr : ${personaddress}">
 			<div class="content">
-				<div class="header" th:text="${event.description}"></div>
+				<div class="header" th:text="${personaddr.email}"></div>
 				<div class="meta">
-					<a th:text="${event.description}"></a>
+					<a th:text="'Email: ' + ${personaddr.email}"></a>
 				</div>
 				<div class="meta">
-					<a th:text="${event.description}"></a>
+					<a th:text="'Mobile: ' + ${personaddr.mobile}"></a>
 				</div>
-				<div class="description" th:text="${event.description} + ' plus some text'" >
+				<div class="Type" th:text="${personaddr.type}" >
 				</div>
 			</div>
 			<div class="extra content">
-				<a class="ui button fluid" th:href="@{'/events/edit/' + ${event.id}}"> Edit</a>
-
+				<a class="ui button fluid" th:href="@{'/events/edit/' + ${personaddr.id}}"> Edit</a>
 			</div>
 		</div>
 

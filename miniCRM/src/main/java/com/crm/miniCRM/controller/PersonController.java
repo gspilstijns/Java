@@ -4,8 +4,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.crm.miniCRM.dto.CommunityDto;
 import com.crm.miniCRM.dto.PersonDto;
+import com.crm.miniCRM.mappers.communityMapper;
+import com.crm.miniCRM.model.Community;
 import com.crm.miniCRM.model.Person;
+import com.crm.miniCRM.model.persistence.CommunityRepository;
+import com.crm.miniCRM.model.persistence.MemberRepository;
 import com.crm.miniCRM.model.persistence.PersonRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,9 +27,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PersonController {
 
     private PersonRepository personService;
+    private MemberRepository memberRepository;
+    private CommunityRepository communityRepository;
 
-    public PersonController(PersonRepository personService) {
+    public PersonController ( PersonRepository personService , MemberRepository memberRepository , CommunityRepository communityRepository ) {
         this.personService = personService;
+        this.memberRepository = memberRepository;
+        this.communityRepository = communityRepository;
     }
 
     @GetMapping

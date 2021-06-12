@@ -1,9 +1,11 @@
 package com.crm.miniCRM.dto;
 
+import java.util.List;
+import java.util.Set;
+
 public class CommunityDto {
 
     private Long id;
-
 
     public String getDescription() {
         return description;

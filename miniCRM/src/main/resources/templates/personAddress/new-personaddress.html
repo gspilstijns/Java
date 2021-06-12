@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Add PersonAddress</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+<body>
+	<div class="ui container">
+		<h2>New PersonAddress</h2>
+			<form th:action="@{/personaddress}" th:object="${personaddress}" method="post"
+				  class="ui form">
+				<div class="field">
+					<label>Email</label>
+					<input type="text" th:field="*{email}" id="email"
+						   name="email" placeholder="Email">
+				</div>
+				<div class="field">
+					<label>Phone</label>
+					<input type="text" th:field="*{phone}" id="phone"
+						   name="phone" placeholder="Phone">
+				</div>
+				<div class="field">
+					<label>Mobile</label>
+					<input type="text" th:field="*{mobile}" id="mobile"
+						   name="mobile" placeholder="Mobile">
+				</div>
+				<div class="field">
+					<label>Type</label>
+					<input type="text" th:field="*{type}" id="type"
+						   name="type" placeholder="Type">
+				</div>
+				<div class="field">
+					<label>Type</label>
+					<input type="text" th:field="*{addressDto}" id="type"
+						   name="type" placeholder="Type">
+				</div>
+				<button class="ui button" type="submit">Submit</button>
+
+			</form>
+	</div>
+</body>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
