@@ -52,6 +52,19 @@ public class EventController {
         return "events/new-event";
     }
 
+    @GetMapping("/new/{communityid}")
+    public String newEventByCommunityId(@PathVariable("communityid") Long communityId, Model model){
+        model.addAttribute ( "event",new EventDto (  ) );
+        model.addAttribute ( "communityid", communityId );
+        return "events/new-event-by-community";
+    }
+    @PostMapping("/new/{communityid}")
+    public String addEventByCommunityId(@PathVariable("communityid") Long communityId, EventDto eventDto){
+        CommunityDto communityDto = communityMapper.convertToDto ( communityRepository.findById ( communityId ));
+        eventDto.setCommunityDto ( communityDto );
+        eventRepository.save ( eventMapper.convertToEntity ( eventDto ) );
+        return "events/events";
+    }
 
     private List < CommunityDto > getCommunityDtos () {
         Iterable < Community > communityList = communityRepository.findAll ();
@@ -93,5 +106,15 @@ public class EventController {
     }
 
 
+    @GetMapping("/delete/{id}")
+    public String deleteEvent( @PathVariable("id") long id, Model model ){
+        Event event = eventRepository.findById ( id );
+        event.setArchived ( true );
+
+        eventRepository.save ( event );
+        //personService.save ( person );
+        //model.addAttribute ( "person", personMapper.convertToDto ( person ) );
+        return "redirect:/communities";
+    }
 
 }

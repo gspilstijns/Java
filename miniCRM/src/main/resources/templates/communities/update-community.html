@@ -6,9 +6,15 @@
 <body>
 <div th:insert="fragments :: html_menu"></div>
 <div class="ui container">
+    <h2>Actions</h2>
+    <div>
+        <p>
+            <a th:href="@{'/events/new/' + ${community.id}}" class="ui button">Add event</a>
+            <a th:href="@{'/communities/delete/' + ${community.id}}" class="ui button">Delete community</a>
+        </p>
+    </div>
 
-    <h2>Update community</h2>
-
+    <h2>Community</h2>
 
     <form th:action="@{/communities/edit/{id}(id=${community.id})}" th:object="${community}" method="post"
           class="ui form">
@@ -18,9 +24,25 @@
                    name="description" placeholder="Description">
         </div>
 
-        <button class="ui button" type="submit" value="update-event">Submit</button>
+        <button class="ui button" type="submit" value="update-event">Save</button>
 
     </form>
+    <h2>Events</h2>
+    <div class="ui link cards">
+        <div class="card" th:each="event : ${events}">
+            <div class="content">
+                <div class="header" th:text="${event.description}"></div>
+                <div class="meta">
+                    <a th:text="'Date: ' + ${event.date}"></a>
+                </div>
+            </div>
+            <div class="extra content">
+                <a class="ui button fluid" th:href="@{'/events/edit/' + ${event.id}}"> Edit</a>
+            </div>
+        </div>
+
+    </div>
+
 </div>
 </body>
 </html>

@@ -17,7 +17,8 @@ public class communityMapper {
         List < EventDto > eventDtos = eventMapper.convertToDtoList ( entity.getEvents () );
         CommunityDto dto = new CommunityDto(entity.getID(),
                 personDtos , eventDtos,
-                entity.getDescription());
+                entity.getDescription(),
+                entity.getArchived ());
         return dto;
     }
 
@@ -26,7 +27,8 @@ public class communityMapper {
         CommunityDto dto = new CommunityDto(entity.get ().getID(),
                 personMapper.convertToDtoList ( entity.get ().getMember () ),
                 eventMapper.convertToDtoList ( entity.get ().getEvents () ) ,
-                entity.get ().getDescription());
+                entity.get ().getDescription() ,
+                entity.get ().getArchived ());
         return dto;
 
     }
@@ -34,7 +36,7 @@ public class communityMapper {
     public static Community convertToEntity(CommunityDto dto) {
         //29-06-1963
 
-        Community community = new Community(dto.getDescription());
+        Community community = new Community(dto.getDescription(),dto.getArchived ());
         if (!StringUtils.isEmpty(dto.getId())) {
             community.setID(dto.getId());
         }

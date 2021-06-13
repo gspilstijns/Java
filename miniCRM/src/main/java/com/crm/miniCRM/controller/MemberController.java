@@ -57,19 +57,32 @@ public class MemberController {
         return "members/new-member";
     }
 
-    /*@GetMapping("/addpersontocommunity/{id}")
+    @GetMapping("/addpersontocommunity/{id}")
     public String showUpdateForm( @PathVariable("id") long id, Model model ){
 
-        MemberDto dto = new MemberDto (  );
-        MemberID memberID = new MemberID ( );
-        memberID.setPerson_ID ( id );
-        dto.setId ( memberID );
+
+
         model.addAttribute ( "member", new MemberDto (  ) );
-        model.addAttribute ( "persons", getPersonDtos () );
+        model.addAttribute ( "userid",id );
         model.addAttribute ( "communities", getCommunityDtos() );
         return "members/add-person-to-community";
 
-    }*/
+    }
+
+    @PostMapping("/addpersontocommunity/{id}")
+    public String addMembertoCommunity( @PathVariable("id") long id, MemberDto memberDto, Model model ){
+
+        /// Todo: scheelt iets met de mapping waardoor ik niet in deze method uitkom
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern ( "yyyy-MM-dd" );
+
+        memberDto.getId ().setPerson_ID (Long.valueOf ( id));
+        memberDto.setSince ( LocalDate.now ().format ( formatter ) );
+        memberRepository.save ( memberMapper.convertToEntity ( memberDto) );
+
+        return "redirect:/persons";
+
+    }
 
     @PostMapping
     public String addmember(MemberDto memberDto){
@@ -78,7 +91,6 @@ public class MemberController {
 
         memberDto.setSince ( LocalDate.now ().format ( formatter ) );
         memberRepository.save ( memberMapper.convertToEntity ( memberDto) );
-        // todo: return page is not existing
         return "redirect:/members";
     }
 

@@ -62,13 +62,6 @@ public class PersonAddressController {
         return "personAddress/personaddress";
     }
 
-    private PersonAddressID getPersonAddressID(long idAddress, long idPerson) {
-        PersonAddressID paID = new PersonAddressID();
-        paID.setAddress_ID(idAddress);
-        paID.setPerson_ID(idPerson);
-        return paID;
-    }
-
     @GetMapping
     public String getpersonaddress( Model model){
         Iterable< PersonAddress > personAddresses = personAddressRepository.findAll ();
@@ -85,26 +78,21 @@ public class PersonAddressController {
 
     @GetMapping("/new")
     public String newpersonaddress(Model model){
-        Iterable<Address> addresses =  addressRepository.findAll ();
-        List <AddressDto> addressDtos = new ArrayList <> (  );
-        addresses.forEach ( a-> addressDtos.add ( addressMapper.convertToDto ( a ) ) );
-
-        model.addAttribute ( "addresses", addressDtos );
+        model.addAttribute ( "addresses", getActiveAddresses (  ) );
         model.addAttribute ( "personaddress",new PersonAddressDto (  ) );
         return "personAddress/new-personaddress";
     }
 
     @GetMapping("/new/{personid}")
     public String newpersonaddress(@PathVariable("personid") Long personid, Model model){
-        Iterable<Address> addresses =  addressRepository.findAll ();
-        List <AddressDto> addressDtos = new ArrayList <> (  );
-        addresses.forEach ( a-> addressDtos.add ( addressMapper.convertToDto ( a ) ) );
+
+        List < AddressDto > addressDtos = getActiveAddresses (  );
 
         PersonAddressDto personAddressDto = new PersonAddressDto (  );
         PersonAddressID personAddressID = new PersonAddressID ( personid, Integer.toUnsignedLong ( 1 ) );
         personAddressDto.setId ( personAddressID );
 
-        model.addAttribute ( "addresses", addressDtos );
+        model.addAttribute ( "addresses", getActiveAddresses (  ) );
         model.addAttribute ( "personaddress", personAddressDto);
         model.addAttribute ( "personid",personid );
         return "personAddress/new-personaddress";
@@ -122,7 +110,6 @@ public class PersonAddressController {
         personAddressRepository.save ( personAddressMapper.convertToEntity (personAddressDto) );
         return "redirect:/persons";
     }
-
 
     @GetMapping("/edit/{id}")
     public String showUpdateForm( @PathVariable("id") PersonAddressID id, Model model ){
@@ -142,9 +129,53 @@ public class PersonAddressController {
         personAddressRepository.save(personAddressMapper.convertToEntity ( personAddressDto ));
         return "redirect:/personaddress";
     }
+    @GetMapping("/edit/{personid}/{addressid}")
+    public String showUpdateForm( @PathVariable("personid") Long personid,@PathVariable("addressid") Long addressid , Model model ){
+        PersonAddressID id = new PersonAddressID ( personid, addressid );
+        Optional < PersonAddress > personAddress = personAddressRepository.findById ( id );
+
+        model.addAttribute ( "addresses",getActiveAddresses () );
+        model.addAttribute ( "personaddress", personAddressMapper.convertToDto ( personAddress.get () ) );
+        return "personAddress/update-event";
+
+    }
+    @PostMapping("/edit/{personid}/{addressid}")
+    public String updatePersonAddress( @PathVariable("personid") Long personid,@PathVariable("addressid") Long addressid ,PersonAddressDto personAddressDto, Model model ){
+        PersonAddressID id = new PersonAddressID ( personid, personAddressDto.getAddressDto ().getId () );
+        personAddressDto.setId ( id );
+        personAddressDto.setAddressDto (
+                addressMapper.convertToDto (
+                    addressRepository.findById ( personAddressDto.getAddressDto ().getId () ).get () ) );
 
 
 
+        personAddressRepository.save ( personAddressMapper.convertToEntity ( personAddressDto ) );
+
+        return "redirect:/persons";
+
+    }
+
+    private PersonAddressID getPersonAddressID(long idAddress, long idPerson) {
+        PersonAddressID paID = new PersonAddressID();
+        paID.setAddress_ID(idAddress);
+        paID.setPerson_ID(idPerson);
+        return paID;
+    }
+
+    private List < AddressDto > getActiveAddresses (  ) {
+        Iterable< Address > addresses = addressRepository.findAll();
+        List<AddressDto> addressDtos = new ArrayList<>();
+
+        //only take the active ones
+        addresses.forEach(a ->{
+            if (!a.getArchived ()){
+
+                addressDtos.add( addressMapper.convertToDto (a));
+
+            }
+        } );
+        return addressDtos;
+    }
     /*protected PersonAddress convertToEntity ( PersonAddressDto personAddressDto ) {
     PersonAddress personAddress = new PersonAddress (
             personAddressDto.getId (),

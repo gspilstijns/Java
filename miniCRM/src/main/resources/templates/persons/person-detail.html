@@ -5,38 +5,39 @@
 </head>
 <body>
 <div th:insert="fragments :: html_menu"></div>
+
 <div class="ui container">
 	<h2>Actions</h2>
-	<div>
-		<p>
-			<a th:href="@{/personaddress/new}" class="ui button">Add Address</a>
-			<a th:href="@{'/persons/delete/' + ${person.id}}" class="ui button">Delete user</a>
-		</p>
+<div>
+	<p>
+		<a th:href="@{'/personaddress/new/' + ${person.id}}" class="ui button">Add Address</a>
+		<a th:href="@{'/persons/delete/' + ${person.id}}" class="ui button">Delete user</a>
+	</p>
+</div>
+
+<h2>Person</h2>
+
+<form th:action="@{/persons/edit/{id}(id=${person.id})}" th:object="${person}" method="post"
+	  class="ui form">
+	<div class="field">
+		<label>First Name</label>
+		<input type="text" th:field="*{firstName}" id="firstName"
+			   name="first-name" placeholder="First Name">
 	</div>
 
-	<h2>Person</h2>
-
-	<form th:action="@{/persons/edit/{id}(id=${person.id})}" th:object="${person}" method="post"
-		  class="ui form">
-		<div class="field">
-			<label>First Name</label>
-			<input type="text" th:field="*{firstName}" id="firstName"
-				   name="first-name" placeholder="First Name">
-		</div>
-
-		<div class="field">
-			<label>Last Name</label>
-			<input type="text" name="last-name"
-				   th:field="*{lastName}" id="lastName" placeholder="Last Name">
-		</div>
-		<div class="field">
-			<label>Last Name</label>
-			<input type="date" name="last-name"
-				   th:field="*{birthDay}" id="birthDay" placeholder="dd-mm-yyyy">
-		</div>
-		<button class="ui button" type="submit" value="update-person">Submit</button>
-
-		<hr>
+	<div class="field">
+		<label>Last Name</label>
+		<input type="text" name="last-name"
+			   th:field="*{lastName}" id="lastName" placeholder="Last Name">
+	</div>
+	<div class="field">
+		<label>Birthday</label>
+		<input type="date" name="birthDay"
+			   th:field="*{birthDay}" id="birthDay" placeholder="dd-mm-yyyy">
+	</div>
+	<button class="ui button" type="submit" value="update-person">Submit</button>
+</form>
+	<hr>
 	<h2>Addresses</h2>
 	<div class="ui link cards">
 		<div class="card" th:each="pa : ${personAddress}">
@@ -62,15 +63,13 @@
 				</div>
 			</div>
 			<div class="extra content">
-				<a class="ui button fluid" th:href="@{'/address/edit/' + ${pa.id}}"> Edit</a>
+				<a class="ui button fluid" th:href="@{/personaddress/edit/{personid}/{addressid}(personid=${pa.getId().getPerson_ID()},addressid=${pa.getId().getAddress_ID()})}"> Edit</a>
+
+				<a class="ui button fluid" th:href="@{'/address/edit/' + ${pa.id}}"> Edit old</a>
 			</div>
 		</div>
 
 	</div>
-
-
-
 </div>
-
 </body>
 </html>

@@ -14,7 +14,8 @@ public class addressMapper {
                 entity.getZip (),
                 entity.getCity (),
                 entity.getCountry (),
-                entity.getType ()
+                entity.getType (),
+                entity.getArchived ()
         );
         return dto;
     }
@@ -29,7 +30,8 @@ public class addressMapper {
                 dto.getZip (),
                 dto.getCity (),
                 dto.getCountry (),
-                dto.getType ()
+                dto.getType (),
+                dto.getArchived ()
         );
         if (!StringUtils.isEmpty(dto.getId())) {
             address.setId (dto.getId());

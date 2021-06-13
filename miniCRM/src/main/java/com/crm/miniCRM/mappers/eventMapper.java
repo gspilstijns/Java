@@ -19,7 +19,8 @@ public class eventMapper {
                 entity.getId (),
                 entity.getDescription (),
                 entity.getDate ().toString (),
-                new CommunityDto ( entity.getCommunity ().getID (),entity.getCommunity ().getDescription () )
+                new CommunityDto ( entity.getCommunity ().getID (),entity.getCommunity ().getDescription () ),
+                entity.getArchived ()
 
         );
         return dto;
@@ -34,7 +35,7 @@ public class eventMapper {
         Event event = new Event (
                 dto.getDescription (),
                 LocalDate.of ( year,month,day ) ,
-                communityMapper.convertToEntity ( dto.getCommunityDto () )
+                communityMapper.convertToEntity ( dto.getCommunityDto () ),dto.getArchived ()
         );
         if (!StringUtils.isEmpty(dto.getId())) {
             event.setId (dto.getId());

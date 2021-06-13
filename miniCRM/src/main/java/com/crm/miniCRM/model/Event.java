@@ -12,6 +12,7 @@ public class Event {
     private Long id;
     private String description;
     private LocalDate date;
+    private Boolean archived;
 
     @ManyToOne
     @JoinColumn(name = "community_id", nullable = true)
@@ -43,6 +44,13 @@ public class Event {
         this.community = community;
     }
 
+    public Event ( String description , LocalDate date , Community community , Boolean archived ) {
+        this.description = description;
+        this.date = date;
+        this.archived = archived;
+        this.community = community;
+    }
+
     public String getDescription() {
         return description;
     }
@@ -59,7 +67,15 @@ public class Event {
         this.date = date;
     }
 
-//    public LocalTime getTime() {
+    public Boolean getArchived () {
+        return archived;
+    }
+
+    public void setArchived ( Boolean archived ) {
+        this.archived = archived;
+    }
+
+    //    public LocalTime getTime() {
 //        return time;
 //    }
 //

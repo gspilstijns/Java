@@ -11,7 +11,7 @@ public class EventDto {
     private String description;
     private String date;
     private CommunityDto communityDto;
-
+    private Boolean archived;
 
     public EventDto () {
     }
@@ -29,8 +29,21 @@ public class EventDto {
         this.communityDto = communityDto;
     }
 
+    public EventDto ( Long id , String description , String date , CommunityDto communityDto , Boolean archived ) {
+        this.id = id;
+        this.description = description;
+        this.date = date;
+        this.communityDto = communityDto;
+        this.archived = archived;
+    }
 
+    public Boolean getArchived () {
+        return archived;
+    }
 
+    public void setArchived ( Boolean archived ) {
+        this.archived = archived;
+    }
 
     public CommunityDto getCommunityDto () {
         return communityDto;

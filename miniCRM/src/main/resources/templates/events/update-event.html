@@ -31,7 +31,9 @@
             </select>
         </div>
         <button class="ui button" type="submit" value="update-event">Submit</button>
-
+        <p>
+            <a th:href="@{/events/delete/{id}(id=${event.id})}" class="negative ui button">Delete Event</a>
+        </p>
     </form>
 </div>
 </body>

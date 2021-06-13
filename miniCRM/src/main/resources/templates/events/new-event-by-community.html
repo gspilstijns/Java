@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments :: html_head">
+<title>Add event</title>
+</head>
+<body>
+<div th:insert="fragments :: html_menu"></div>
+	<div class="ui container">
+		<h2>New event</h2>
+			<form th:action="@{/events/new/{id}(id=${communityid})}" th:object="${event}" method="post"
+				  class="ui form">
+				<div class="field">
+					<label>Description</label>
+					<input type="text" th:field="*{description}" id="description"
+						   name="description" placeholder="Description">
+				</div>
+				<div class="field">
+					<label>Date</label>
+					<input type="date" th:field="*{date}" id="date"
+						   name="date" placeholder="dd-mm-yyyy">
+				</div>
+				<button class="ui button" type="submit">Submit</button>
+
+			</form>
+	</div>
+</body>
+</html>

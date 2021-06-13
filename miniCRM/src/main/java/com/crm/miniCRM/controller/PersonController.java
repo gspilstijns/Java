@@ -76,6 +76,7 @@ public class PersonController {
 
     @PostMapping
     public String addperson(PersonDto person) {
+        person.setArchived ( false );
         personService.save(personMapper.convertToEntity (person));
         return "redirect:/persons";
     }

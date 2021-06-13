@@ -7,15 +7,38 @@ import java.util.Set;
 @Entity
 @Table(name="community")
 public class Community {
+    //////////Properties
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long ID;
-
     @ManyToMany(mappedBy = "member")
     private List<Person> member;
-
     @OneToMany(mappedBy = "community")
     private List<Event> events;
+    private String description;
+    private Boolean archived;
+
+    /// Constructors
+    public Community(){}
+
+    public Community(String description) {
+        this.description = description;
+    }
+
+    public Community ( String description , Boolean archived ) {
+        this.description = description;
+        this.archived = archived;
+    }
+
+    ///////Getters and setters
+
+    public Boolean getArchived () {
+        return archived;
+    }
+
+    public void setArchived ( Boolean archived ) {
+        this.archived = archived;
+    }
 
     public List < Person > getMember () {
         return member;
@@ -24,16 +47,6 @@ public class Community {
     public void setMember ( List < Person > member ) {
         this.member = member;
     }
-
-
-    private String description;
-
-    public Community(){}
-
-    public Community(String description) {
-        this.description = description;
-    }
-
     public List < Event > getEvents () {
         return events;
     }

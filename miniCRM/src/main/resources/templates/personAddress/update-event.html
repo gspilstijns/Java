@@ -1,21 +1,47 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:insert="fragments :: html_head">
-    <title>Update event</title>
+    <title>Update Person Address</title>
 </head>
 <body>
 <div th:insert="fragments :: html_menu"></div>
 <div class="ui container">
 
-    <h2>Update event</h2>
+    <h2>Update Person Address</h2>
 
 
-    <form th:action="@{/events/edit/{id}(id=${event.id})}" th:object="${event}" method="post"
-          class="ui form">
+    <form th:action="@{/personaddress/edit/{personid}/{addressid}(personid=${personaddress.getId().getPerson_ID()},addressid=${personaddress.getId().getAddress_ID()})}"
+          th:object="${personaddress}" method="post" class="ui form">
         <div class="field">
-            <label>Description</label>
-            <input type="text" th:field="*{description}" id="description"
-                   name="description" placeholder="Description">
+            <label>Email</label>
+            <input type="text" th:field="*{email}" id="email"
+                   name="email" placeholder="Email">
+        </div>
+        <div class="field">
+            <label>Phone</label>
+            <input type="text" th:field="*{phone}" id="phone"
+                   name="phone" placeholder="Phone">
+        </div>
+        <div class="field">
+            <label>Mobile</label>
+            <input type="text" th:field="*{mobile}" id="mobile"
+                   name="mobile" placeholder="Mobile">
+        </div>
+        <div class="field">
+            <label>Type</label>
+            <select class="ui fluid search dropdown" name="type" th:field="*{type}">
+                <option value="">---Type---</option>
+                <option value="PRIV">Private</option>
+                <option value="PROF">Professional</option>
+            </select>
+        </div>
+        <div class="field">
+            <label>Address</label>
+            <select th:field="*{addressDto.id}" class = form-control required>
+                <th:block th:each="address:${addresses}">
+                    <option th:text="${address.toString()}" th:value="${address.id}"></option>
+                </th:block>
+            </select>
         </div>
 
         <button class="ui button" type="submit" value="update-event">Submit</button>

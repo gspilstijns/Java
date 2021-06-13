@@ -13,14 +13,14 @@
 		</p>
 	</div>
 
-	<h2>Events</h2>
+	<h2>Communities</h2>
 
 	<div class="ui link cards">
 		<div class="card" th:each="community : ${communities}">
 			<div class="content">
 				<div class="header" th:text="${community.description}"></div>
 				<div class="meta">
-					<a th:text="${community.description}"></a>
+					<a th:text="'Aantal members: '+${community.members.size()}"></a>
 				</div>
 				<div class="meta">
 					<a th:text="${community.description}"></a>

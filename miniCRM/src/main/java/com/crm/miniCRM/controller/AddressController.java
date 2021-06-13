@@ -1,8 +1,13 @@
 package com.crm.miniCRM.controller;
 
 import com.crm.miniCRM.dto.AddressDto;
+import com.crm.miniCRM.dto.CommunityDto;
 import com.crm.miniCRM.dto.PersonDto;
+import com.crm.miniCRM.mappers.addressMapper;
+import com.crm.miniCRM.mappers.communityMapper;
 import com.crm.miniCRM.model.Address;
+import com.crm.miniCRM.model.Community;
+import com.crm.miniCRM.model.Event;
 import com.crm.miniCRM.model.Person;
 import com.crm.miniCRM.model.persistence.AddressRepository;
 import org.springframework.stereotype.Controller;
@@ -28,10 +33,10 @@ public class AddressController {
 
     @GetMapping
     public String getaddress( Model model) {
-        Iterable< Address > addresses = addressRepository.findAll();
+       /* Iterable< Address > addresses = addressRepository.findAll();
         List < AddressDto > addressDtos = new ArrayList <> ();
-        addresses.forEach(p -> addressDtos.add(convertToDto(p)));
-        model.addAttribute("addresses", addressDtos);
+        addresses.forEach(p -> addressDtos.add(addressMapper.convertToDto(p)));*/
+        model.addAttribute("addresses", getActiveAddresses());
         return "addresses/addresses";
     }
 
@@ -43,7 +48,7 @@ public class AddressController {
 
     @PostMapping
     public String addaddress(AddressDto addressDto) {
-        addressRepository.save(convertToEntity(addressDto));
+        addressRepository.save(addressMapper.convertToEntity(addressDto));
 
         return "redirect:/address";
     }
@@ -51,7 +56,7 @@ public class AddressController {
     @GetMapping("/edit/{id}")
     public String showUpdateForm( @PathVariable("id") long id, Model model ){
         Address address = addressRepository.findById ( id );
-        model.addAttribute ( "address", convertToDto ( address ) );
+        model.addAttribute ( "address", addressMapper.convertToDto ( address ) );
         return "addresses/update-address";
 
     }
@@ -63,41 +68,45 @@ public class AddressController {
             return "addresses/update-address";
         }
 
-        addressRepository.save(convertToEntity ( addressDto ));
+        addressRepository.save( addressMapper.convertToEntity (  addressDto ));
         return "redirect:/address";
     }
 
-
-    protected AddressDto convertToDto(Address entity) {
-        AddressDto dto = new AddressDto (
-                entity.getId (),
-                entity.getStreet (),
-                entity.getNumber (),
-                entity.getBox (),
-                entity.getZip (),
-                entity.getCity (),
-                entity.getCountry (),
-                entity.getType ()
-        );
-        return dto;
+    @GetMapping("/delete/{id}")
+    public String deleteAddress( @PathVariable("id") long id, Model model ){
+        Address address = addressRepository.findById ( id );
+        address.setArchived ( true );
+        addressRepository.save ( address );
+        return "redirect:/address";
     }
 
-    protected Address convertToEntity(AddressDto dto) {
-        //29-06-1963
+    private List < AddressDto > getActiveAddresses () {
+        Iterable< Address > addresses = addressRepository.findAll();
+        List<AddressDto> addressDtos = new ArrayList<>();
 
-        Address address = new Address(
-                dto.getStreet (),
-                dto.getNumber (),
-                dto.getBox (),
-                dto.getZip (),
-                dto.getCity (),
-                dto.getCountry (),
-                dto.getType ()
-        );
-        if (!StringUtils.isEmpty(dto.getId())) {
-            address.setId (dto.getId());
-        }
-        return address;
+        //only take the active ones
+        addresses.forEach(a ->{
+            if (!a.getArchived ()){
+
+                addressDtos.add( addressMapper.convertToDto (a));
+
+            }
+        } );
+        return addressDtos;
+    }
+    private List < AddressDto > getArchivedAddresses () {
+        Iterable< Address > addresses = addressRepository.findAll();
+        List<AddressDto> addressDtos = new ArrayList<>();
+
+        //only take the archived ones
+        addresses.forEach(a ->{
+            if (!a.getArchived ()){
+
+                addressDtos.add( addressMapper.convertToDto (a));
+
+            }
+        } );
+        return addressDtos;
     }
 
 }

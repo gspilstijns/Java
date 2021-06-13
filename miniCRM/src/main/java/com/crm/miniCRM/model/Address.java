@@ -28,6 +28,9 @@ public class Address {
     private String country;
     private String type;
 
+    private Boolean archived;
+
+
     public Address(){}
 
     public Address(String street, String number, String box, String zip, String city, String country, String type) {
@@ -38,6 +41,33 @@ public class Address {
         this.city = city;
         this.country = country;
         this.type = type;
+    }
+
+    public Address ( String street , String number , String box , String zip , String city , String country , String type , Boolean archived ) {
+        this.street = street;
+        this.number = number;
+        this.box = box;
+        this.zip = zip;
+        this.city = city;
+        this.country = country;
+        this.type = type;
+        this.archived = archived;
+    }
+
+    public List < Person > getPerson_address () {
+        return person_address;
+    }
+
+    public void setPerson_address ( List < Person > person_address ) {
+        this.person_address = person_address;
+    }
+
+    public Boolean getArchived () {
+        return archived;
+    }
+
+    public void setArchived ( Boolean archived ) {
+        this.archived = archived;
     }
 
     public Long getId() {

@@ -10,6 +10,8 @@ public class AddressDto {
     private String city;
     private String country;
     private String type;
+    private Boolean archived;
+
 
     public AddressDto () {
     }
@@ -25,6 +27,18 @@ public class AddressDto {
         this.type = type;
     }
 
+    public AddressDto ( Long id , String street , String number , String box , String zip , String city , String country , String type , Boolean archived ) {
+        this.id = id;
+        this.street = street;
+        this.number = number;
+        this.box = box;
+        this.zip = zip;
+        this.city = city;
+        this.country = country;
+        this.type = type;
+        this.archived = archived;
+    }
+
     @Override
     public String toString () {
         return "AddressDto{" +
@@ -37,6 +51,14 @@ public class AddressDto {
                 ", country='" + country + '\'' +
                 ", type='" + type + '\'' +
                 '}';
+    }
+
+    public Boolean getArchived () {
+        return archived;
+    }
+
+    public void setArchived ( Boolean archived ) {
+        this.archived = archived;
     }
 
     public Long getId () {
