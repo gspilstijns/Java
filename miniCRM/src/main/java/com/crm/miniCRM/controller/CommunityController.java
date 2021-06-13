@@ -2,6 +2,7 @@ package com.crm.miniCRM.controller;
 
 import com.crm.miniCRM.dto.CommunityDto;
 import com.crm.miniCRM.dto.EventDto;
+import com.crm.miniCRM.mappers.communityMapper;
 import com.crm.miniCRM.model.Community;
 import com.crm.miniCRM.model.Event;
 import com.crm.miniCRM.model.persistence.CommunityRepository;
@@ -33,7 +34,7 @@ public class CommunityController {
     public String getcommunities(Model model) {
         Iterable<Community> communities = communityService.findAll();
         List<CommunityDto> CommunityDtos = new ArrayList<>();
-        communities.forEach(p -> CommunityDtos.add(convertToDto(p)));
+        communities.forEach(p -> CommunityDtos.add(communityMapper.convertToDto(p)));
         model.addAttribute("communities", CommunityDtos);
         return "communities/communities";
     }
@@ -46,7 +47,7 @@ public class CommunityController {
 
     @PostMapping
     public String addcommunity(CommunityDto community) {
-        communityService.save(convertToEntity(community));
+        communityService.save(communityMapper.convertToEntity(community));
 
         return "redirect:communities/communities";
     }
@@ -54,7 +55,10 @@ public class CommunityController {
     @GetMapping("/edit/{id}")
     public String showUpdateForm( @PathVariable("id") long id, Model model ){
         Community community = communityService.findById ( id );
-        model.addAttribute ( "event", convertToDto ( community ) );
+        CommunityDto dto = communityMapper.convertToDto ( community );
+
+        model.addAttribute ( "community", dto );
+
         return "communities/update-community";
 
     }
@@ -66,25 +70,11 @@ public class CommunityController {
             return "communities/update-community";
         }
 
-        communityService.save(convertToEntity ( communityDto ));
+        communityService.save(communityMapper.convertToEntity ( communityDto ));
         return "redirect:communities/communities";
     }
     //
 
-    protected CommunityDto convertToDto(Community entity) {
-        CommunityDto dto = new CommunityDto(entity.getID(), entity.getDescription());
-         return dto;
-    }
-
-    protected Community convertToEntity(CommunityDto dto) {
-        //29-06-1963
-
-        Community community = new Community(dto.getDescription());
-        if (!StringUtils.isEmpty(dto.getId())) {
-            community.setID(dto.getId());
-        }
-        return community;
-    }
 
 
 

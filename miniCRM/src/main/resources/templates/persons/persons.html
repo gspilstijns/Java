@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-
+<head th:insert="fragments :: html_head">
     <title>persons</title>
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
-
 </head>
 <body>
+<div th:insert="fragments :: html_menu"></div>
 <div class="ui container">
     <h2>Actions</h2>
     <div>
@@ -31,7 +28,8 @@
                 </div>
             </div>
             <div class="extra content">
-                <a class="ui button fluid" th:href="@{'/persons/edit/' + ${person.id}}"> Edit</a>
+                <a class="ui button fluid" th:href="@{'/persons/persondetails/' + ${person.id}}"> Edit</a>
+                <a class="ui button fluid" th:href="@{'/persons/edit/' + ${person.id}}"> Add to Community</a>
             </div>
         </div>
 
@@ -41,5 +39,3 @@
 
 </body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>

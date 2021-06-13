@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:insert="fragments :: html_head">
 <title>Add PersonAddress</title>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 </head>
 <body>
+<div th:insert="fragments :: html_menu"></div>
 	<div class="ui container">
 		<h2>New PersonAddress</h2>
-			<form th:action="@{/personaddress}" th:object="${personaddress}" method="post"
+			<form th:action="@{/personaddress/new/{id}(id=${personid})}" th:object="${personaddress}" method="post"
 				  class="ui form">
 				<div class="field">
 					<label>Email</label>
@@ -26,13 +26,19 @@
 				</div>
 				<div class="field">
 					<label>Type</label>
-					<input type="text" th:field="*{type}" id="type"
-						   name="type" placeholder="Type">
+					<select class="ui fluid search dropdown" name="type" th:field="*{type}">
+						<option value="">---Type---</option>
+						<option value="PRIV">Private</option>
+						<option value="PROF">Professional</option>
+					</select>
 				</div>
 				<div class="field">
-					<label>Type</label>
-					<input type="text" th:field="*{addressDto}" id="type"
-						   name="type" placeholder="Type">
+					<label>Address</label>
+					<select th:field="*{addressDto.id}" class = form-control required>
+						<th:block th:each="address:${addresses}">
+							<option th:text="${address.toString()}" th:value="${address.id}"></option>
+						</th:block>
+					</select>
 				</div>
 				<button class="ui button" type="submit">Submit</button>
 
@@ -40,4 +46,3 @@
 	</div>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>

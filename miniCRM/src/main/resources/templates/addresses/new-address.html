@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:insert="fragments :: html_head">
     <title>Add address</title>
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 </head>
 <body>
+<div th:insert="fragments :: html_menu"></div>
 <div class="ui container">
 
     <h2>New address</h2>
@@ -52,7 +50,7 @@
             <div class="field">
                 <label>Type</label>
                 <select class="ui fluid search dropdown" name="type" th:field="*{type}">
-                    <option value="">Type</option>
+                    <option value="">---Type----</option>
                     <option value="PRIV">Private</option>
                     <option value="PROF">Professional</option>
                 </select>
@@ -65,4 +63,3 @@
 </div>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>

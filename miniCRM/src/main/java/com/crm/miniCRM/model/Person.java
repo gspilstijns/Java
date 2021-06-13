@@ -29,12 +29,22 @@ public class Person {
             name = "member",
             joinColumns = @JoinColumn(name = "COMMUNITY_ID", referencedColumnName = "ID"),
             inverseJoinColumns = @JoinColumn(name = "PERSON_ID", referencedColumnName = "ID"))
-    List<Community> member;
+    private List<Community> member;
 
 
     private String firstName;
     private String lastName;
     private LocalDate birthDay;
+
+    private Boolean archived;
+
+    public Boolean getArchived () {
+        return archived;
+    }
+
+    public void setArchived ( Boolean archived ) {
+        this.archived = archived;
+    }
 
     protected Person() {
     }
@@ -52,7 +62,23 @@ public class Person {
                 id, firstName, lastName, birthDay.toString());
     }
 
-    public void setId(Long id) {
+    public List < Address > getPerson_address () {
+        return person_address;
+    }
+
+    public void setPerson_address ( List < Address > person_address ) {
+        this.person_address = person_address;
+    }
+
+    public List < Community > getMember () {
+        return member;
+    }
+
+    public void setMember ( List < Community > member ) {
+        this.member = member;
+    }
+
+    public void setId( Long id) {
         this.id = id;
     }
 

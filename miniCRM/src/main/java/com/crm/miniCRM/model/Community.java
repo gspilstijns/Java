@@ -15,7 +15,7 @@ public class Community {
     private List<Person> member;
 
     @OneToMany(mappedBy = "community")
-    private Set<Event> events;
+    private List<Event> events;
 
     public List < Person > getMember () {
         return member;
@@ -32,6 +32,14 @@ public class Community {
 
     public Community(String description) {
         this.description = description;
+    }
+
+    public List < Event > getEvents () {
+        return events;
+    }
+
+    public void setEvents ( List < Event > events ) {
+        this.events = events;
     }
 
     public Long getID() {

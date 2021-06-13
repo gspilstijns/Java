@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
+<head th:insert="fragments :: html_head">
     <title>Update event</title>
-
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
 </head>
 <body>
+<div th:insert="fragments :: html_menu"></div>
 <div class="ui container">
 
     <h2>Update event</h2>
@@ -19,11 +17,22 @@
             <input type="text" th:field="*{description}" id="description"
                    name="description" placeholder="Description">
         </div>
-
+        <div class="field">
+            <label>Date</label>
+            <input type="date" th:field="*{date}" id="date"
+                   name="date" placeholder="dd-mm-yyyy">
+        </div>
+        <div class="field">
+            <label>Community</label>
+            <select th:field="*{communityDto.id}" class = form-control required>
+                <th:block th:each="community:${communityList}">
+                    <option th:text="${community.description}" th:value="${community.id}"></option>
+                </th:block>
+            </select>
+        </div>
         <button class="ui button" type="submit" value="update-event">Submit</button>
 
     </form>
 </div>
 </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>

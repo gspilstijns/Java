@@ -9,7 +9,8 @@
 	<h2>Actions</h2>
 	<div>
 		<p>
-			<a th:href="@{/personaddress/new}" class="ui button">New PersonAddress</a>
+			<a th:href="@{/personaddress/new}" class="ui button">Add Address</a>
+			<a th:href="@{'/persons/delete/' + ${person.id}}" class="ui button">Delete user</a>
 		</p>
 	</div>
 

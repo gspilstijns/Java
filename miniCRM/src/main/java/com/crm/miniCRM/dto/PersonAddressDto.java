@@ -8,14 +8,14 @@ public class PersonAddressDto {
     private String email;
     private String phone;
     private String mobile;
-    private char    type;
+    private String type;
     private AddressDto addressDto;
 
 
     public PersonAddressDto () {
     }
 
-    public PersonAddressDto ( PersonAddressID id , String email , String phone , String mobile , char type ) {
+    public PersonAddressDto ( PersonAddressID id , String email , String phone , String mobile , String type ) {
         Id = id;
         this.email = email;
         this.phone = phone;
@@ -23,7 +23,7 @@ public class PersonAddressDto {
         this.type = type;
     }
 
-    public PersonAddressDto ( PersonAddressID id , String email , String phone , String mobile , char type , AddressDto addressDto ) {
+    public PersonAddressDto ( PersonAddressID id , String email , String phone , String mobile , String type , AddressDto addressDto ) {
         Id = id;
         this.email = email;
         this.phone = phone;
@@ -72,11 +72,11 @@ public class PersonAddressDto {
         this.mobile = mobile;
     }
 
-    public char getType () {
+    public String getType () {
         return type;
     }
 
-    public void setType ( char type ) {
+    public void setType ( String type ) {
         this.type = type;
     }
 }

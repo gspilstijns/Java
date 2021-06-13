@@ -49,10 +49,10 @@ public class MiniCrmApplication {
     }
 
     private static void extractPersonAddresses(PersonAddressRepository personAddressRepository) {
-        personAddressRepository.save(new PersonAddress(new PersonAddressID(1L, 1L), "a@b.com", "12343456", "34567789", 'P'));
-        personAddressRepository.save(new PersonAddress(new PersonAddressID(2L, 1L), "b@c.com", "23434567", "34567789", 'P'));
-        personAddressRepository.save(new PersonAddress(new PersonAddressID(3L, 2L), "d@e.com", "34345678", "34567789", 'P'));
-        personAddressRepository.save(new PersonAddress(new PersonAddressID(4L, 3L), "f@g.com", "43456789", "34567789", 'P'));
+        personAddressRepository.save(new PersonAddress(new PersonAddressID(1L, 1L), "a@b.com", "12343456", "34567789", "PRIV"));
+        personAddressRepository.save(new PersonAddress(new PersonAddressID(2L, 1L), "b@c.com", "23434567", "34567789", "PRIV"));
+        personAddressRepository.save(new PersonAddress(new PersonAddressID(3L, 2L), "d@e.com", "34345678", "34567789", "PRIV"));
+        personAddressRepository.save(new PersonAddress(new PersonAddressID(4L, 3L), "f@g.com", "43456789", "34567789", "PRIV"));
 
         // fetch all Persons
         log.info("PersonAddress found with findAll():");

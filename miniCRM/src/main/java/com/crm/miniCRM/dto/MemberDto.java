@@ -7,13 +7,13 @@ import java.time.LocalDate;
 public class MemberDto {
     private MemberID Id;
 
-    private LocalDate since;
-    private LocalDate until;
+    private String since;
+    private String until;
 
     public MemberDto () {
     }
 
-    public MemberDto ( MemberID id , LocalDate since , LocalDate until ) {
+    public MemberDto ( MemberID id , String since , String until ) {
         Id = id;
         this.since = since;
         this.until = until;
@@ -27,19 +27,19 @@ public class MemberDto {
         Id = id;
     }
 
-    public LocalDate getSince () {
+    public String getSince () {
         return since;
     }
 
-    public void setSince ( LocalDate since ) {
+    public void setSince ( String since ) {
         this.since = since;
     }
 
-    public LocalDate getUntil () {
+    public String getUntil () {
         return until;
     }
 
-    public void setUntil ( LocalDate until ) {
+    public void setUntil ( String until ) {
         this.until = until;
     }
 }

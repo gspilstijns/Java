@@ -7,22 +7,20 @@
 <div th:insert="fragments :: html_menu"></div>
 	<div class="ui container">
 		<h2>New event</h2>
-			<form th:action="@{/events}" th:object="${event}" method="post"
+			<form th:action="@{/members}" th:object="${member}" method="post"
 				  class="ui form">
 				<div class="field">
-					<label>Description</label>
-					<input type="text" th:field="*{description}" id="description"
-						   name="description" placeholder="Description">
-				</div>
-				<div class="field">
-					<label>Date</label>
-					<input type="date" th:field="*{date}" id="date"
-						   name="date" placeholder="dd-mm-yyyy">
+					<label>Person</label>
+					<select th:field="*{id.person_ID}" class = form-control required>
+						<th:block th:each="person:${persons}">
+							<option th:text="${community.description}" th:value="${community.id}"></option>
+						</th:block>
+					</select>
 				</div>
 				<div class="field">
 					<label>Community</label>
-					<select th:field="*{communityDto.id}" class = form-control required>
-						<th:block th:each="community:${communityList}">
+					<select th:field="*{id.community_ID}" class = form-control required>
+						<th:block th:each="community:${communities}">
 							<option th:text="${community.description}" th:value="${community.id}"></option>
 						</th:block>
 					</select>

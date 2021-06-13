@@ -2,25 +2,27 @@ package com.crm.miniCRM.dto;
 
 import com.crm.miniCRM.model.Community;
 
+
 import java.time.LocalDate;
+import java.util.Date;
 
 public class EventDto {
     private Long id;
     private String description;
-    private LocalDate date;
+    private String date;
     private CommunityDto communityDto;
 
 
     public EventDto () {
     }
 
-    public EventDto ( Long id , String description , LocalDate date ) {
+    public EventDto ( Long id , String description , String date ) {
         this.id = id;
         this.description = description;
         this.date = date;
     }
 
-    public EventDto ( Long id , String description , LocalDate date , CommunityDto communityDto ) {
+    public EventDto ( Long id , String description , String date , CommunityDto communityDto ) {
         this.id = id;
         this.description = description;
         this.date = date;
@@ -53,11 +55,11 @@ public class EventDto {
         this.description = description;
     }
 
-    public LocalDate getDate () {
+    public String getDate () {
         return date;
     }
 
-    public void setDate ( LocalDate date ) {
+    public void setDate ( String date ) {
         this.date = date;
     }
 }

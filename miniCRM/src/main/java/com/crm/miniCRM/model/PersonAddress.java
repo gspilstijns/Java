@@ -14,7 +14,7 @@ public class PersonAddress implements Serializable {
     private String email;
     private String phone;
     private String mobile;
-    private char    type;
+    private String type;
 
     @ManyToOne
     @JoinColumn(name = "address_id", insertable = false, updatable = false)
@@ -22,7 +22,7 @@ public class PersonAddress implements Serializable {
 
 
     public PersonAddress(){}
-    public PersonAddress(PersonAddressID Id, String email, String phone, String mobile, char type) {
+    public PersonAddress(PersonAddressID Id, String email, String phone, String mobile, String type) {
         this.Id = Id;
         this.email = email;
         this.phone = phone;
@@ -30,7 +30,7 @@ public class PersonAddress implements Serializable {
         this.type = type;
     }
 
-    public PersonAddress ( PersonAddressID id , String email , String phone , String mobile , char type , Address address ) {
+    public PersonAddress ( PersonAddressID id , String email , String phone , String mobile , String type , Address address ) {
         Id = id;
         this.email = email;
         this.phone = phone;
@@ -79,11 +79,11 @@ public class PersonAddress implements Serializable {
         this.mobile = mobile;
     }
 
-    public char getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(char type) {
+    public void setType(String type) {
         this.type = type;
     }
 

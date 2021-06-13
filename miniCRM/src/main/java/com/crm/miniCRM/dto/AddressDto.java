@@ -25,6 +25,20 @@ public class AddressDto {
         this.type = type;
     }
 
+    @Override
+    public String toString () {
+        return "AddressDto{" +
+                "id=" + id +
+                ", street='" + street + '\'' +
+                ", number='" + number + '\'' +
+                ", box='" + box + '\'' +
+                ", zip='" + zip + '\'' +
+                ", city='" + city + '\'' +
+                ", country='" + country + '\'' +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
     public Long getId () {
         return id;
     }

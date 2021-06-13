@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments :: html_head">
+    <title>Add member</title>
+</head>
+<body>
+<div th:insert="fragments :: html_menu"></div>
+<div class="ui container">
+    <h2>New member</h2>
+    <form th:action="@{/members}" th:object="${member}" method="post"
+          class="ui form">
+        <div class="field">
+            <label>Person</label>
+            <select th:field="*{id.person_ID}" class = form-control required>
+                <th:block th:each="person:${persons}">
+                    <option th:text="${person.firstName}" th:value="${person.id}"></option>
+                </th:block>
+            </select>
+        </div>
+        <div class="field">
+            <label>Community</label>
+            <select th:field="*{id.community_ID}" class = form-control required>
+                <th:block th:each="community:${communities}">
+                    <option th:text="${community.description}" th:value="${community.id}"></option>
+                </th:block>
+            </select>
+        </div>
+        <div class="field">
+            <label>Member untill</label>
+            <input type="date" th:field="*{until}" id="date"
+                   name="date" placeholder="dd-mm-yyyy">
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+
+    </form>
+</div>
+</body>
+</html>
