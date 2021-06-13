@@ -1,5 +1,6 @@
 package com.crm.miniCRM.mappers;
 
+import com.crm.miniCRM.dto.CommunityDto;
 import com.crm.miniCRM.dto.EventDto;
 import com.crm.miniCRM.dto.PersonDto;
 import com.crm.miniCRM.model.Event;
@@ -18,7 +19,8 @@ public class eventMapper {
                 entity.getId (),
                 entity.getDescription (),
                 entity.getDate ().toString (),
-                communityMapper.convertToDto ( entity.getCommunity () )
+                new CommunityDto ( entity.getCommunity ().getID (),entity.getCommunity ().getDescription () )
+
         );
         return dto;
     }
@@ -40,10 +42,10 @@ public class eventMapper {
         return event;
     }
 
-   /* public static List < EventDto > convertToDtoList ( List< Event > events ) {
+    public static List < EventDto > convertToDtoList ( List< Event > events ) {
         List<EventDto> list = new ArrayList <> (  );
         events.forEach ( e -> list.add ( eventMapper.convertToDto ( e ) ) );
         return list;
 
-    }*/
+    }
 }

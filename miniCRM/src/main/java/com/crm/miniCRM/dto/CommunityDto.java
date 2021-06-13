@@ -11,6 +11,7 @@ public class CommunityDto {
     private Long id;
     private List< PersonDto> members;
     private List< EventDto > events;
+    private String description;
 
     public List < EventDto > getEvents () {
         return events;
@@ -36,7 +37,7 @@ public class CommunityDto {
         this.description = description;
     }
 
-    private String description;
+
 
     public CommunityDto() {
     }

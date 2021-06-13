@@ -31,6 +31,7 @@ public class EventDto {
 
 
 
+
     public CommunityDto getCommunityDto () {
         return communityDto;
     }
