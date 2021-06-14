@@ -1,5 +1,13 @@
 package com.crm.miniCRM.controller;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -7,20 +15,27 @@ import java.util.Optional;
 import com.crm.miniCRM.dto.AddressDto;
 import com.crm.miniCRM.dto.PersonAddressDto;
 import com.crm.miniCRM.dto.PersonDto;
+import com.crm.miniCRM.dto.PersonImportDto;
 import com.crm.miniCRM.mappers.addressMapper;
 import com.crm.miniCRM.mappers.personAddressMapper;
 import com.crm.miniCRM.mappers.personMapper;
 import com.crm.miniCRM.model.Person;
 import com.crm.miniCRM.model.PersonAddress;
 import com.crm.miniCRM.model.persistence.*;
+import com.opencsv.CSVParser;
+import com.opencsv.CSVParserBuilder;
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
+import com.opencsv.bean.CsvToBean;
+import com.opencsv.bean.CsvToBeanBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 
 @Controller
@@ -111,6 +126,66 @@ public class PersonController {
         return "redirect:/persons";
 
     }
+
+
+    @GetMapping("/import")
+    public String importUsers(){
+
+        return "persons/upload-person";
+    }
+    //// Sources
+    //// https://attacomsian.com/blog/spring-boot-thymeleaf-file-upload
+    //// https://www.geeksforgeeks.org/reading-csv-file-java-using-opencsv/
+    //// https://www.java67.com/2015/08/how-to-load-data-from-csv-file-in-java.html
+    //// https://semantic-ui.com/
+
+    private final String UPLOAD_DIR = "C:\\Temp\\";
+
+
+    @PostMapping("/upload")
+    public String uploadFile( @RequestParam("file") MultipartFile file, RedirectAttributes attributes) {
+
+        List< PersonImportDto > personImportDtos = new ArrayList <> (  );
+        // check if file is empty
+        if (file.isEmpty()) {
+            attributes.addFlashAttribute("message", "Please select a file to upload.");
+            return "redirect:/persons/import";
+        }
+
+        // normalize the file path
+        String fileName = StringUtils.cleanPath(file.getOriginalFilename());
+
+        // save the file on the local file system
+        try {
+           Path path = Paths.get(UPLOAD_DIR + fileName);
+           Files.copy(file.getInputStream(), path, StandardCopyOption.REPLACE_EXISTING);
+
+            FileReader filereader = new FileReader(path.toString ());
+            CSVParser parser = new CSVParserBuilder ().withSeparator(';').build();
+
+            personImportDtos = new CsvToBeanBuilder(filereader)
+                    .withSeparator(';')
+                    .withType ( PersonImportDto.class )
+                    .build()
+                    .parse ();
+
+            personImportDtos.forEach ( p ->
+                personService.save ( personMapper.convertToEntityBulkImport ( p ))
+            );
+
+
+         } catch (IOException e) {
+             e.printStackTrace();
+         }
+
+        // return success response
+        attributes.addFlashAttribute("message", "You successfully imported "+ personImportDtos.size ()  +" records from " + fileName + '!');
+
+        return "redirect:/persons/import";
+    }
+
+
+
 
 
     ////////////////////////////

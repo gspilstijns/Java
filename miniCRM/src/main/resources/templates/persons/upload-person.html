@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:insert="fragments :: html_head">
+    <title>Bulk import of Persons</title>
+
+</head>
+<body>
+<div th:insert="fragments :: html_menu"></div>
+    <div class="ui container">
+        <h2>Upload File</h2>
+
+
+                <form method="post" th:action="@{/persons/upload}" enctype="multipart/form-data">
+                    <p th:text="${message}" th:if="${message ne null}" class="ui warning message"></p>
+                    <div class="form-group">
+                        <input type="file" name="file" class="form-control-file">
+                    </div>
+                    <button type="submit" class="ui button">Upload File</button>
+                </form>
+
+
+        <div class="ui bulleted list">
+            <div class="item">The uploaded CSV requires a ';' as seperator</div>
+            <div class="item">
+                <div>The date is required to be in one of the following formats</div>
+                <div class="list">
+                    <div class="item">dd/MM/yyyy</div>
+                    <div class="item">d/m/yyyy</div>
+                    <div class="item">d/mm/yyyy</div>
+                </div>
+            </div>
+            <div class="item">The uploaded CSV will be stored in C:\Temp folder
+               for alterations, look for:  private final String UPLOAD_DIR = "C:\\Temp\\" in the PersonController
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

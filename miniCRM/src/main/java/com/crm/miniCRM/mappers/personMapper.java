@@ -1,6 +1,7 @@
 package com.crm.miniCRM.mappers;
 
 import com.crm.miniCRM.dto.PersonDto;
+import com.crm.miniCRM.dto.PersonImportDto;
 import com.crm.miniCRM.model.Person;
 import org.springframework.util.StringUtils;
 
@@ -20,6 +21,7 @@ public class personMapper {
         int month = Integer.parseInt(dto.getBirthDay().toString().substring(3,5));
         int day = Integer.parseInt(dto.getBirthDay().toString().substring(0,2));*/
 
+
         int year = Integer.parseInt ( dto.getBirthDay ().toString ().substring ( 0,4 ) );
         int month = Integer.parseInt ( dto.getBirthDay ().toString ().substring ( 5,7 ) );
         int day = Integer.parseInt ( dto.getBirthDay ().toString ().substring ( 8,10 ) );
@@ -29,6 +31,19 @@ public class personMapper {
         if (!StringUtils.isEmpty(dto.getId())) {
             person.setId(dto.getId());
         }
+        return person;
+    }
+
+    public static Person convertToEntityBulkImport( PersonImportDto dto){
+
+        String[] attributes = dto.getBirthDay ().split("/");
+        int year = Integer.parseInt ( attributes[2] );
+        int month = Integer.parseInt ( attributes[1] );
+        int day = Integer.parseInt (attributes[0]);
+
+
+        Person person = new Person(dto.getFirstName(), dto.getLastName(), LocalDate.of(year, month, day),false);
+
         return person;
     }
 

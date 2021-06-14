@@ -46,10 +46,17 @@ public class Person {
         this.archived = archived;
     }
 
-    protected Person() {
+    public Person() {
     }
 
-    public Person(String firstName, String lastName, LocalDate birthDay) {
+    public Person ( String firstName , String lastName , LocalDate birthDay , Boolean archived ) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDay = birthDay;
+        this.archived = archived;
+    }
+
+    public Person( String firstName, String lastName, LocalDate birthDay) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDay = birthDay;
