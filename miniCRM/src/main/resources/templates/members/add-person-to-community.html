@@ -7,16 +7,22 @@
 <div th:insert="fragments :: html_menu"></div>
 	<div class="ui container">
 		<h2>Add user to Community</h2>
+
 			<form th:action="@{/members/addpersontocommunity/{id}(id=${userid})}" th:object="${member}" method="post"
 				  class="ui form">
 
 				<div class="field">
 					<label>Community</label>
-					<select th:field="*{id.community_ID}" class = form-control required>
+					<select th:field="*{communityId}" class = form-control required>
 						<th:block th:each="community:${communities}">
 							<option th:text="${community.description}" th:value="${community.id}"></option>
 						</th:block>
 					</select>
+				</div>
+				<div class="field">
+					<label>Membership until</label>
+					<input type="date" name="until"
+						   th:field="*{until}" id="until" placeholder="dd-mm-yyyy">
 				</div>
 				<button class="ui button" type="submit">Submit</button>
 

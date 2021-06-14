@@ -14,18 +14,14 @@ import com.crm.miniCRM.model.persistence.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.thymeleaf.util.StringUtils;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -58,11 +54,14 @@ public class MemberController {
     }
 
     @GetMapping("/addpersontocommunity/{id}")
-    public String showUpdateForm( @PathVariable("id") long id, Model model ){
+    public String showUpdateForm( @PathVariable("id") Long id, Model model ){
 
 
+        MemberID memberID = new MemberID (  );
+        MemberDto memberDto = new MemberDto (  );
+        memberDto.setId ( memberID );
 
-        model.addAttribute ( "member", new MemberDto (  ) );
+        model.addAttribute ( "member", new MemberViewDto (  ) );
         model.addAttribute ( "userid",id );
         model.addAttribute ( "communities", getCommunityDtos() );
         return "members/add-person-to-community";
@@ -70,21 +69,26 @@ public class MemberController {
     }
 
     @PostMapping("/addpersontocommunity/{id}")
-    public String addMembertoCommunity( @PathVariable("id") long id, MemberDto memberDto, Model model ){
+    public String addMembertoCommunity( @PathVariable("id") Long id, MemberViewDto memberViewDto, Model model ){
 
         /// Todo: scheelt iets met de mapping waardoor ik niet in deze method uitkom
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern ( "yyyy-MM-dd" );
 
-        memberDto.getId ().setPerson_ID (Long.valueOf ( id));
-        memberDto.setSince ( LocalDate.now ().format ( formatter ) );
-        memberRepository.save ( memberMapper.convertToEntity ( memberDto) );
+        MemberID memberID = new MemberID ( id,memberViewDto.getCommunityId () );
+        MemberDto member = new MemberDto (  );
+        member.setId ( memberID );
+        member.setSince ( LocalDate.now ().format ( formatter ) );
+        member.setUntil ( memberViewDto.getUntil () );
+        /*memberDto.getId ().setPerson_ID (Long.valueOf ( id));
+        memberDto.setSince ( LocalDate.now ().format ( formatter ) );*/
+        memberRepository.save ( memberMapper.convertToEntity ( member) );
 
         return "redirect:/persons";
 
     }
 
-    @PostMapping
+   /* @PostMapping
     public String addmember(MemberDto memberDto){
 
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern ( "yyyy-MM-dd" );
@@ -92,7 +96,7 @@ public class MemberController {
         memberDto.setSince ( LocalDate.now ().format ( formatter ) );
         memberRepository.save ( memberMapper.convertToEntity ( memberDto) );
         return "redirect:/members";
-    }
+    }*/
 
     private List < CommunityDto > getCommunityDtos () {
         Iterable < Community > communityList = communityRepository.findAll ();
